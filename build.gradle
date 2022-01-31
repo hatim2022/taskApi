@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.3'
+	id 'org.springframework.boot' version '2.5.6'
 	id 'groovy'
 }
 
@@ -21,8 +21,9 @@ dependencies {
 	implementation 'org.postgresql:postgresql:42.3.1'
 	implementation 'javax.validation:validation-api:2.0.1.Final'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.google.guava:guava:20.0'
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.5.0'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.5.0'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
+
