@@ -26,4 +26,9 @@ class TaskServiceImpl implements TaskService{
     Task save(Task task) {
         taskRepository.save(task)
     }
+
+    @Override
+    void delete(Integer id) {
+        taskRepository.deleteById(id)
+    }
 }

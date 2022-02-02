@@ -14,4 +14,7 @@ interface TaskRepository extends JpaRepository<Task, Integer> {
     Task save(Task task)
 
     Optional<Task> findById(Integer id)
+
+    deleteById(Integer integer)
+
 }

@@ -27,4 +27,8 @@ class Task {
     @NotNull
     @Column(nullable = false)
     String date
+
+    @NotNull
+    @Column(nullable = false)
+    boolean reminder
 }

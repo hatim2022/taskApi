@@ -8,4 +8,6 @@ interface TaskService {
     Optional<Task> findById(Integer id)
 
     Task save(Task task)
+
+    void delete(Integer id)
 }
